@@ -16,4 +16,34 @@ After cloning this repository to your computer, please take the following steps:
 - Make sure that you regularly commit to your GitHub repository, using short descriptive commit messages
 - Use a `docker run` command for your operating system to run GatorGrader
 - Provide all of the required responses in the `writing/reflection.md` file
-- The program should initially produce the following output:
+- The program should ultimately produce the following output:
+
+```text
+Running all of the knapsack solvers!
+
+Using greedy-by-value to fill knapsack of size 20
+Total value of items taken is 200.0
+   (Computer, 200, 20)
+
+Using greedy-by-weight to fill knapsack of size 20
+Total value of items taken is 170.0
+   (Book, 10, 1)
+   (Vase, 50, 2)
+   (Radio, 20, 4)
+   (Painting, 90, 9)
+
+Using greedy-by-density to fill knapsack of size 20
+Total value of items taken is 255.0
+   (Vase, 50, 2)
+   (Clock, 175, 10)
+   (Book, 10, 1)
+   (Radio, 20, 4)
+
+Generating the powerset of all items!
+
+Using exhaustive enumeration to fill a knapsack of size 20
+Total value of items taken is 275.0
+   (Clock, 175, 10)
+   (Painting, 90, 9)
+   (Book, 10, 1)
+```
