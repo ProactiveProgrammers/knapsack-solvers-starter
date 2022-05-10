@@ -24,7 +24,7 @@ writing/reflection.md:
     ConfirmFileExists
     CountFileWords --count 200
     CountMarkdownTags --tag "heading" --count 10 --exact
-    CountMarkdownTags --tag "code_block" --count 1 --exact
+    CountMarkdownTags --tag "code_block" --count 1
     MatchFileFragment --fragment "TODO" --count 0 --exact
     MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
 
