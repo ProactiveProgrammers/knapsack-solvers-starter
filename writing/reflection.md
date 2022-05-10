@@ -1,6 +1,6 @@
 # Knapsack Solvers
 
-## Gregory M. Kapfhammer
+## Add Your Name Here
 
 ## Program Output
 
