@@ -1,5 +1,13 @@
 # Knapsack Solvers
 
+TODO: Before you submit this project, please remove all of the TODO
+markers and either remove or rewrite the prompts that go along with
+them. When you are finished with the technical content in this document
+it should not contain and mistakes in spelling, grammar, or the syntax
+of Markdown. This means that, upon completion, the technical writing in
+this document should be suitably polished and ready for publication on
+your professional web site.
+
 ## Add Your Name Here
 
 ## Program Output
