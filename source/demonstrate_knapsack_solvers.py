@@ -1,3 +1,5 @@
+# TODO: All all of the required import statements
+
 from typing import List
 from typing import Tuple
 
@@ -6,43 +8,43 @@ class Item(object):
 
     def __init__(self, n, v, w):
         """Construct an instance of the Item class."""
-        # TODO: Add this source code segment by consulting the book
+        # TODO: Add this source code segment by consulting the book and course web site
 
     def get_name(self) -> str:
         """Access the name of an Item."""
-        # TODO: Add this source code segment by consulting the book
+        # TODO: Add this source code segment by consulting the book and course web site
 
     def get_value(self) -> int:
         """Access the value of an Item."""
-        # TODO: Add this source code segment by consulting the book
+        # TODO: Add this source code segment by consulting the book and course web site
 
     def get_weight(self) -> int:
         """Access the weight of an Item."""
-        # TODO: Add this source code segment by consulting the book
+        # TODO: Add this source code segment by consulting the book and course web site
 
     def __repr__(self) -> str:
         """Produce a textual representation of the Item."""
-        # TODO: Add this source code segment by consulting the book
+        # TODO: Add this source code segment by consulting the book and course web site
 
 
 def value(item: Item) -> int:
     """Return the value for a specific item."""
-    # TODO: Add this source code segment by consulting the book
+    # TODO: Add this source code segment by consulting the book and course web site
 
 
 def weight_inverse(item: Item) -> float:
     """Return the inverse of the weight for a specific item."""
-    # TODO: Add this source code segment by consulting the book
+    # TODO: Add this source code segment by consulting the book and course web site
 
 
 def density(item: Item) -> float:
     """Return the density of the item."""
-    # TODO: Add this source code segment by consulting the book
+    # TODO: Add this source code segment by consulting the book and course web site
 
 
 def greedy(items: List[Item], max_weight: int, key_function) -> Tuple[List[Item], float]:
     """Perform the greedy algorithm for items, a maximum weight of a knapsack, and an objective function."""
-    # TODO: Add this source code segment by consulting the book
+    # TODO: Add this source code segment by consulting the book and course web site
 
 
 def build_items() -> List[Item]:
@@ -71,44 +73,22 @@ def powerset(s: List[Item]):
 
 def exhaustive_enumeration(pset, max_weight, get_value, get_weight):
     """Run an exhaustive enumeration algorithm to find best combination."""
-    # TODO: Provide an implementation of this function by consulting the book
+    # TODO: Provide an implementation of this function by consulting the book and course web site
 
 
 def run_exhaustive_enumeration(max_weight=20):
     """Use the exhaustive enumeration algorithm for a problem instance."""
-    items = build_items()
-    print("Generating the powerset of all items!")
-    pset = powerset(items)
-    print()
-    print("Using exhaustive enumeration to fill a knapsack of size", max_weight)
-    taken, value = exhaustive_enumeration(pset, max_weight, Item.get_value, Item.get_weight)
-    print("Total value of items taken is", value)
-    for item in taken:
-        print("  ", item)
+    # TODO: Provide an implementation of this function by consulting the book and course web site
 
 
 def run_greedy(items: List[Item], max_weight: int, key_function) -> None:
     """Run the greedy algorithm and display the result."""
-    taken, value = greedy(items, max_weight, key_function)
-    print("Total value of items taken is", value)
-    for item in taken:
-        print("  ", item)
+    # TODO: Provide an implementation of this function by consulting the book and course web site
 
 
 def run_all_greedy(max_weight=20) -> None:
     """Run all greedy algorithm with all possible objective functions."""
-    print("Running all of the knapsack solvers!")
-    print()
-    items = build_items()
-    print("Using greedy-by-value to fill knapsack of size", max_weight)
-    run_greedy(items, max_weight, value)
-    print()
-    print("Using greedy-by-weight to fill knapsack of size", max_weight)
-    run_greedy(items, max_weight, weight_inverse)
-    print()
-    print("Using greedy-by-density to fill knapsack of size", max_weight)
-    run_greedy(items, max_weight, density)
-    print()
+    # TODO: Provide an implementation of this function by consulting the book and course web site
 
 
 if __name__ == "__main__":
