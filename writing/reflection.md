@@ -16,6 +16,11 @@ your professional web site.
 
 TODO: Use a fenced code block to provide the output for this command.
 
+TODO: Make sure that you provide the output after completing the program.
+
+TODO: Do not copy the program output provided in the README file; only
+provide output from running the program on your own laptop.
+
 - `python demonstrate_knapsack_solvers.py`
 
 ## Program Understanding
@@ -31,6 +36,7 @@ TODO: Provide a response to this question using at least one paragraph.
 ### Using at least one paragraph, explain how the greedy-by-density algorithm works
 
 TODO: Provide a response to this question using at least one paragraph.
+TODO: Remember that greedy-by-density is the same as greedy-by-ratio.
 
 ### Using at least one paragraph, explain how the exhaustive algorithm works
 
