@@ -1,8 +1,5 @@
 # TODO: All all of the required import statements
 
-from typing import List
-from typing import Tuple
-
 
 class Item(object):
 
