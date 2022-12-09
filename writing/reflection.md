@@ -27,20 +27,26 @@ provide output from running the program on your own laptop.
 
 ### Using at least one paragraph, explain how the greedy-by-value algorithm works
 
-TODO: Provide a response to this question using at least one paragraph.
+TODO: Using your own words, provide a response to this question using at least one paragraph.
 
 ### Using at least one paragraph, explain how the greedy-by-weight algorithm works
 
-TODO: Provide a response to this question using at least one paragraph.
+TODO: Using your own words, provide a response to this question using at least one paragraph.
 
 ### Using at least one paragraph, explain how the greedy-by-density algorithm works
 
-TODO: Provide a response to this question using at least one paragraph.
+TODO: Using your own words, provide a response to this question using at least one paragraph.
 TODO: Remember that greedy-by-density is the same as greedy-by-ratio.
 
 ### Using at least one paragraph, explain how the exhaustive algorithm works
 
-TODO: Provide a response to this question using at least one paragraph.
+TODO: Using your own words, provide a response to this question using at least one paragraph.
+
+### What are some ways in which the use of a knapsack solver connects to other areas of computer science?
+
+TODO: Provide an answer to this question using your own words.
+TODO: You may conduct online research to answer this question.
+TODO: If your response to this question leverages online sources, please cite them correctly.
 
 ### How many items are inside of the powerset of the list of items in Table 14-1? Why?
 
