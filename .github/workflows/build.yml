@@ -14,12 +14,13 @@ on:
 # This job performs all necessary checks
 jobs:
   build:
-    # Use the latest version of Ubuntu on Microsoft Azure
-    runs-on: ubuntu-latest
+    # Use the latest version of Ubuntu
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         # Performs all actions on different versions of Python
-        python-version: [3.9]
+        python-version: ["3.10"]
+        os: [ubuntu-latest]
     # Define the workflow steps
     steps:
     # Checkout the code of the repository
@@ -27,51 +28,26 @@ jobs:
           uses: actions/checkout@v2
           with:
             fetch-depth: 0
-        # Run the mdl linting tool
-        # Refers to .mdlrc file in repository
-        - name: Run Markdown Linting
-          uses: actionshub/markdownlint@main
         # Setup Python for the current language version
         - name: Setup Python ${{ matrix.python-version }}
           if: always()
           uses: actions/setup-python@v1
           with:
             python-version: ${{ matrix.python-version }}
-        # Setup Java
-        - name: Set up JDK 1.11
-          if: always()
-          uses: actions/setup-java@v1
-          with:
-            java-version: 1.11
-        # Check for existence of gradle files
-        - name: Check for Existence of Files
-          uses: andstor/file-existence-action@v1
-          with:
-            files: "build.gradle, gradle.properties, settings.gradle, gatorgrader.yml"
         # Install pip
         - name: Install Pip
           if: always()
           run: |
             pip install -U pip
-        # Install pipenv
-        - name: Install Pipenv
-          if: always()
-          run: |
-            pip install pipenv
+            python -m pip install --user pipx
         # Run the Python program
         - name: Run Python Program
           if: always()
           run: |
             cd source
             python demonstrate_knapsack_solvers.py
-            cd ..
-        # Determine the version of Gradle
-        - name: Determine Gradle Version
-          if: always()
-          run: |
-            gradle --version
-        # Run GatorGrader: see config/gatorgrader.yml
-        - name: Run GatorGrader
-          if: always()
+        # Run GatorGrader: see config/gatorgrade.yml
+        - name: Run GatorGrader with GatorGrade
           run:  |
-            gradle grade
+            pipx install gatorgrade
+            gatorgrade --config config/gatorgrade.yml
